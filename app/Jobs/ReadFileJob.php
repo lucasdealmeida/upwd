@@ -2,9 +2,7 @@
 
 namespace App\Jobs;
 
-use App\DTO\CreditCardDTO;
 use App\DTO\UserDTO;
-use App\Models\User;
 use App\Reader\ReaderFactory;
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
