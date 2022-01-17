@@ -11,9 +11,6 @@ class ReaderJson extends ReaderContract
     public function readFile(): LazyCollection
     {
         return LazyCollection::make(function (){
-            /**
-             *
-             */
             $json = file_get_contents($this->filePath);
 
             $data = json_decode($json,true);
