@@ -1,0 +1,18 @@
+[
+    {
+        "name": "John Doe",
+        "address": "328 Bergstrom",
+        "checked": false,
+        "description": "Voluptatibus nihil",
+        "interest": null,
+        "date_of_birth": "1955-01-01T01:11:13+00:00",
+        "email": "john@doe.net",
+        "account": "112233",
+        "credit_card": {
+            "type": "Visa",
+            "number": "4532383564703",
+            "name": "Brooks Hudson",
+            "expirationDate": "12/19"
+        }
+    }
+]

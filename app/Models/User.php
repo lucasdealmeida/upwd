@@ -20,7 +20,12 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'password',
+        'address',
+        'is_checked',
+        'description',
+        'interest',
+        'dob',
+        'account',
     ];
 
     /**
@@ -39,6 +44,11 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'dob' => 'datetime:Y-m-d',
     ];
+
+    public function creditCard()
+    {
+        return $this->hasOne(UserCreditCard::class);
+    }
 }
